@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caixas</title>
+    <style>
+      h1,
+      div {
+        background-color: rgb(121, 64, 174);
+        width: 300px;
+        height: 200px;
+        display: inline-block;
+
+        border: 5px solid black;
+
+        border-width: 5px;
+        border-style: solid;
+        border-color: black;
+      }
+
+      p {
+        background-color: rgb(216, 197, 173);
+        width: 300px;
+        height: 200px;
+        display: inline-block;
+      }
+
+      a,
+      span {
+        background-color: rgb(140, 43, 43);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>O heading é um elemento block lvl</h1>
+    <p>
+      o parágrafo também é um elemento block lvl, mas os links
+      <a href="#">são inline elements</a>
+    </p>
+
+    <div>
+      Esse é um div qualquer, que ocupa todo o espaço. O <span>span</span> não,
+      assim como a anchor tag, ele é inline.
+    </div>
+  </body>
+</html>

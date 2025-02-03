@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pseudoclasses</title>
+
+    <style>
+      div > p {
+        display: none;
+      }
+
+      div:hover > p {
+        display: block;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Combinando Seletores</h1>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est possimus
+      nisi debitis esse! Delectus laudantium iure, minima deserunt perferendis,
+      aliquam atque et at eveniet harum fugit adipisci debitis. Placeat,
+      doloremque.
+    </p>
+
+    <div>
+      aqui será Combinado
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nesciunt
+        mollitia dolorem odio molestias corporis enim minima quaerat eaque odit
+        placeat voluptas, reiciendis expedita repudiandae, vero accusamus dolor.
+        Mollitia, cum?
+      </p>
+    </div>
+
+    <h2>Pseudoelementos</h2>
+
+    <p class="pseudo1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis expedita
+      <br />
+      dolore ipsam voluptatum tempora velit repellat asperiores sunt odit
+      beatae, suscipit rerum tenetur laboriosam maiores, quo quasi iure
+      praesentium soluta!
+    </p>
+
+    <p class="pseudo2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto
+      aperiam, cupiditate exercitationem libero, veniam accusamus aliquid nobis
+      modi, culpa vel! Odio pariatur repudiandae vel libero blanditiis maiores
+      aspernatur asperiores!
+    </p>
+
+    <p class="pseudo3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Dolores
+      eius illum a veniam itaque quos culpa consequuntur debitis repellendus
+      deserunt consequatur, iste, accusamus eum cumque recusandae doloribus
+      voluptate necessitatibus. Quia.
+    </p>
+  </body>
+</html>

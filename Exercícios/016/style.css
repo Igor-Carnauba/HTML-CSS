@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.basico {
+  color: blue;
+  text-align: center;
+}
+
+.intermediario {
+  color: brown;
+  background-color: aqua;
+}
+
+#principal {
+  background-color: blueviolet;
+  text-align: end;
+}
+
+h2::after {
+  content: "[Isso aqui não está escrito no HTML]";
+}
+
+.pseudo1::first-line {
+  color: blue;
+}
+
+.pseudo2::first-letter {
+  color: brown;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.pseudo3:hover::first-letter {
+  color: yellow;
+  background-color: black;
+  font-weight: bold;
+  font-size: 50px;
+}

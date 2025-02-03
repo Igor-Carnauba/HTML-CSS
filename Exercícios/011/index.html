@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagem Adaptativa</title>
+  </head>
+  <body>
+    <h1>Imagem Adaptativa</h1>
+
+    <p>Essa imagem se adapta a displays diferentes</p>
+
+    <picture>
+      <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png" />
+      <source
+        media="(max-width: 1050px)"
+        srcset="foto-m.png"
+        type="image/png"
+      />
+      <img src="foto-g.png" alt="Imagem Adaptativa" />
+    </picture>
+
+    <h2>Colocando audio no HTML</h2>
+
+    <audio controls>
+      <source src="midia/happy-mistake.mp3" type="audio/mpeg" />
+      <p>
+        Infelizmente seu navegador não conseguiu reproduzir o áudio. Para
+        baixá-lo cliquie <a href="#">aqui</a>
+      </p>
+    </audio>
+  </body>
+</html>
