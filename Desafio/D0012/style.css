@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap");
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: "Passion One", Cursive;
+  --fonte3: "Sriracha", Cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: var(--fonte1);
+}
+
+header {
+  background-color: black;
+  color: white;
+  font-family: var(--fonte2);
+  font-size: 3em;
+  font-variant: small-caps;
+  text-align: center;
+  padding: 40px;
+}
+
+/* header > p {
+  font-family: "Inter";
+  font-weight: 200;
+  /* font-size: 0.9em; */
+
+header a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  /* font-size: 0.9em; */
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* main {
+  padding: 20px;
+} */
+
+section {
+  padding: 10vh;
+  font-family: var(--fonte3);
+  font-size: 2em;
+}
+
+section P {
+  /* font-family: "Sriracha";
+  font-size: 1.5em; */
+  /* padding: 10px; */
+  padding-bottom: 2em;
+}
+
+#second {
+  background-image: url("imagens/background001.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.626);
+  /* padding: 20px;
+  margin: 10px -20px; */
+}
+
+#second p {
+  background-color: rgba(0, 0, 0, 0.121);
+  color: white;
+  /* border: 1px solid black; */
+  /* width: 300px; */
+  display: inline-block;
+  padding: 5px;
+}
+
+#fourth {
+  background-image: url("imagens/background002.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.626);
+  /* padding: 20px;
+  margin: 10px -20px; */
+}
+
+#fourth p {
+  background-color: rgba(0, 0, 0, 0.333);
+  color: white;
+  /* border: 1px solid black; */
+  /* width: 300px; */
+  display: inline-block;
+  padding: 5px;
+  /* Usar o display inline-block faz com que a caixa fique do tamanho do conteúdo do parágrafo. 
+  Melhor do que usar uma widht fixa. */
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
