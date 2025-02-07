@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      /* table {
+        width: 600px;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .first {
+        background-color: rgba(5, 5, 60, 0.338);
+      } */
+
+      table {
+        width: 700px;
+        border-collapse: collapse;
+        position: relative;
+      }
+
+      td,
+      th {
+        border: 2px solid black;
+        padding: 20px;
+        text-align: left;
+      }
+
+      tfoot td {
+        text-align: center;
+      }
+
+      thead {
+        background-color: rgba(231, 231, 33, 0.829);
+        color: black;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: rgb(231, 231, 33);
+      }
+
+      tbody {
+        background-color: rgba(133, 133, 21, 0.63);
+        color: black;
+        font-size: 0.9em;
+      }
+
+      tbody > tr:nth-child(2n) {
+        background-color: rgb(231, 36, 36);
+      }
+
+      tfoot {
+        background-color: rgba(231, 231, 33, 0.829);
+        color: black;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      .num {
+        text-align: center;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste de Tabelas</h1>
+
+    <table>
+      <tr class="row first">
+        <td>A1</td>
+        <td>A2</td>
+        <td>A3</td>
+        <td>A4</td>
+      </tr>
+      <tr class="row second">
+        <td>B1</td>
+        <td>B2</td>
+        <td>B3</td>
+        <td>B4</td>
+      </tr>
+      <tr class="row third">
+        <td>C1</td>
+        <td>C2</td>
+        <td>C3</td>
+        <td>C4</td>
+      </tr>
+      <tr class="row fourth">
+        <td>D1</td>
+        <td>D2</td>
+        <td>D3</td>
+        <td>D4</td>
+      </tr>
+    </table>
+
+    <h2>Exemplo de Tabela Grande</h2>
+    <table>
+      <caption>
+        Lista de Frutas e seus Nutrientes
+      </caption>
+      <thead>
+        <tr>
+          <th>Frutas</th>
+          <th>Carboidratos</th>
+          <th>Proteínas</th>
+          <th>Gorduras</th>
+          <th>Calorias(Kcal)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Abacate</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Laranja</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Açaí</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Abacate</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Laranja</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Açaí</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Abacate</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Laranja</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Açaí</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Abacate</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Laranja</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Açaí</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Goiaba</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Mamão</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Maracujá</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Abacate</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num">76</td>
+        </tr>
+        <tr>
+          <td>Laranja</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+          <td class="num" rowspan="6">76</td>
+        </tr>
+        <tr>
+          <td>Açaí</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+        </tr>
+        <tr>
+          <td>Goiaba</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+        </tr>
+        <tr>
+          <td>Mamão</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+        </tr>
+        <tr>
+          <td>Maracujá</td>
+          <td class="num">5,84</td>
+          <td class="num">4,03</td>
+          <td class="num">6,21</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total de calorias</th>
+          <td colspan="4">50000Kcal</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table>
+      <caption>
+        Tabela de sei lá o que
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Classificação X</th>
+          <th scope="col">Classificação Y</th>
+          <th scope="col" style="width: 70px">Classificação z</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dado x</td>
+          <td>Dado y</td>
+          <td>Dado Z</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total dos dados</th>
+          <td>Número do total</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
