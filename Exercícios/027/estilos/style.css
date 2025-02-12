@@ -1,3 +1,5 @@
+/* configurações gerais */
+
 * {
   padding: 0px;
   margin: 0px;
@@ -6,4 +8,35 @@
 html {
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
+}
+
+h1 {
+  background-color: antiquewhite;
+  color: black;
+}
+
+@media screen and (orientation: portrait) {
+
+  TODAS AS DECLARAÇÕES
+
+}
+
+@media screen and (orientation: landscape) {
+
+  Todas as declarações
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+(...)
+
+@media screen and (min-width: 1201px) {
+  
 }
