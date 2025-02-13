@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* Paleta de cores
+verde:#49a09d
+Lilás: #5f2c82
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Começando pelo mobile first */
+
+body,
+html {
+  background-color: #5f2c82;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#login {
+  background-color: white;
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  /* Método obsoleto de centralizar */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
+}
+
+#imagem {
+  display: block;
+  background-color: #5f2c82;
+  background-image: url(Imagens/predio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+#form {
+  display: block;
+  padding: 10px;
+}
+
+#form > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#form > p {
+  font-size: 0.9em;
+}
+
+/* Para tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+  }
+  #login {
+    width: 90vw;
+  }
+
+  #imagem {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  #form {
+    float: right;
+    width: 70%;
+    /* float é obsoleto */
+  }
+}
+
+/* Para desktop e grandes telas */
+
+@media screen and (min-width: 992px) {
+  body {
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+  }
+
+  #login {
+    width: 950px;
+  }
+
+  #imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+
+  #form {
+    float: left;
+    width: 50%;
+  }
+
+  #form > h1 {
+    font-size: 2em;
+  }
+}

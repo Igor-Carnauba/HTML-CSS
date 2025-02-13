@@ -10,20 +10,22 @@
     />
     <title>Testando Media Queries</title>
   </head>
-  <body>
+  <body onresize="mudouTamanho">
     <header>
       <h1>Site de Notícias</h1>
-      <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">
+      <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
         menu
       </span>
-      <nav id="itens">
-        <a href="#">Principal</a>
-        <a href="#">Política</a>
-        <a href="#">Esportes</a>
-        <a href="#">Economia</a>
-        <a href="#">Tecnlogia</a>
-        <a href="#">Suporte</a>
-      </nav>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Principal</a></li>
+          <li><a href="#">Política</a></li>
+          <li><a href="#">Esportes</a></li>
+          <li><a href="#">Economia</a></li>
+          <li><a href="#">Tecnlogia</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </menu>
     </header>
     <main>
       <article>
@@ -62,6 +64,14 @@
       </article>
     </main>
     <script>
+      function mudouTamanho() {
+        if (window.innerwidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+
       function clickMenu() {
         if (itens.style.display == "block") {
           itens.style.display = "none";
